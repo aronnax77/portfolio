@@ -175,7 +175,7 @@ input, textarea {
   color: white;
 }
 
-#about h2, #contact h2 {
+#about h2, #portfolio h2, #contact h2 {
   text-align: center;
   font-size: 2vw;
 }
@@ -186,10 +186,50 @@ input, textarea {
   color: white;
 }
 
-img {
+#about img {
   float: right;
   border-radius: 15px;
   border: 2px solid lightblue;
   margin: 0 0 0 16px;
 }
 /* About and Contact sections end */
+
+
+/******************************************************************************
+  Portfolio begins
+******************************************************************************/
+#portfolio {
+  padding-top: 70px;
+}
+
+#portfolio h2 {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.row {
+  height: 20vw;
+  margin-top: 30px;
+  border: 2px solid red;
+}
+
+.panel {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border: 2px solid green;
+}
+
+.card {
+  padding-top: 2vw;
+  width: 25vw;
+  height: 100%;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+
+.card img {
+  width: 25vw;
+  border: 2px solid black;
+}
+/* Portfolio ends */
