@@ -48,8 +48,8 @@ nav {
   left: 10vw;
   right: 10vw;
   border: 4px solid yellow;
-  background-color: purple;
-  padding: 16px 0;
+  background-color: darkblue;
+  /*padding: 16px 0;*/
 }
 
 body {
@@ -83,13 +83,7 @@ hr {
   width: 95%;
 }
 
-footer {
-  position: relative;
-  margin: 0 auto;
-  height: 150px;
-  background-color: purple;
-  border: 4px solid yellow; /* SWITCH */
-}
+
 
 h1 {
   transform: translate(0, -25%);
@@ -104,14 +98,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: purple;
+  background-color: darkblue;
   overflow: hidden;
 }
 
 li {
   text-align: center;
   float: left;
-  padding: 14px 16px;
+  padding: 20px 16px;
   border-right: 1px solid #bbb;
 }
 
@@ -121,11 +115,7 @@ li a {
 }
 
 li a:hover {
-  color: #f00;
-}
-
-li a:active {
-  background-color: yellow;
+  color: yellow;
 }
 /* Menu styling ends */
 
@@ -233,3 +223,36 @@ input, textarea {
   border: 2px solid black;
 }
 /* Portfolio ends */
+
+
+/******************************************************************************
+  Footer begins
+******************************************************************************/
+footer {
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  height: 100px;
+  background-color: darkblue;
+  border: 4px solid yellow; /* SWITCH */
+}
+
+.icons {
+  position: relative;
+  top: 20px;
+  left: 0;
+  display: inline;
+}
+
+footer i {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footnote {
+  position: absolute;
+  right: 2vw;
+  bottom: 10px;
+  font-size: 10px;
+}

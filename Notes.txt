@@ -23,3 +23,16 @@ Build a Personal Portfolio Webpage
     When you are finished, click the "I've completed this challenge" button and include a link to your CodePen. 
 
     You can get feedback on your project by sharing it with your friends on Facebook.
+
+
+List of images:
+
+images/the_thinker.png - https://carriegooch.files.wordpress.com/2008/11/the-thinker.jpg
+images/tinyblog.png - https://github.com/aronnax77/portfolio/blob/master/images/tinyblog.png?raw=true
+images/contact_book.png - https://github.com/aronnax77/portfolio/blob/master/images/contact_book.png?raw=true
+images/challenge.png - https://github.com/aronnax77/portfolio/blob/master/images/challenge.png?raw=true
+images/base64.png - https://raw.githubusercontent.com/aronnax77/portfolio/master/images/base64.png
+images/css_shapes.png - https://github.com/aronnax77/portfolio/blob/master/images/css_shapes.png?raw=true
+images/keyframes.png - https://github.com/aronnax77/portfolio/blob/master/images/keyframes.png?raw=true
+images/paint.png - https://github.com/aronnax77/portfolio/blob/master/images/paint.png?raw=true
+images/tribute.png - https://github.com/aronnax77/portfolio/blob/master/images/tribute.png?raw=true
