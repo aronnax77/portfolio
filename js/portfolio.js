@@ -1,35 +1,48 @@
-/*****************************************************************************
+var scrollY = 0;
+  var distance = 40;
+  var speed = 24;
 
-Author:  Richard Myatt
+  function autoScrollChoice(elem) {
+    var currentY = window.pageYOffset;
+    var targetY = document.getElementById(elem).offsetTop;
+    var bodyHeight = document.body.offsetHeight;
+    var yPos = currentY + window.innerHeight;
 
-Code activated by info button designed to show and information panel
-previously hidden throught the use of 'display: none;' in the css code.
-Requires a reference to material-icons in the head of the html file i.e.
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-           rel="stylesheet">
-together with a reference to this script.
-
-******************************************************************************/
-
-// Set initial state of the information panel
-var infoVisible = false;
-
-/* This function is activated by an onclick event on the info icon setting the
-   state of the display to true or false and the visibility of the panel through
-   the 'display' attribute */
-function showInfo(panel) {
-  var elem = document.getElementById(panel);
-  if(infoVisible) {
-    elem.style.display = 'none';
-    infoVisible = false;
-  } else {
-    elem.style.display = 'block';
-    infoVisible = true;
+    if (currentY < targetY) {
+      autoScrollTo(elem);
+    } else {
+      resetScroller(elem);
+    }
   }
-}
 
-function show() {
-  /*var elem = document.getElementById("tom");
-  elem.scrollIntoView();*/
-  window.location.hash = 'tom';
-}
+  function autoScrollTo(elem) {
+    var currentY = window.pageYOffset;
+    var targetY = document.getElementById(elem).offsetTop - 50;
+    var bodyHeight = document.body.offsetHeight;
+    var yPos = currentY + window.innerHeight;
+
+    var animator = setTimeout('autoScrollTo(\''+elem+'\')', speed);
+    if(yPos > bodyHeight) {
+      clearTimeout(animator);
+    } else {
+      if(currentY < targetY - distance) {
+        scrollY = currentY + distance;
+        window.scroll(0, scrollY);
+      } else {
+        clearTimeout(animator);
+      }
+    }
+  }
+
+  function resetScroller(elem) {
+    var currentY = window.pageYOffset;
+    var targetY = document.getElementById(elem).offsetTop - 50;
+
+    var animator = setTimeout('resetScroller(\''+elem+'\')', speed);
+    if(currentY > targetY) {
+      scrollY = currentY - distance;
+      window.scroll(0, scrollY);
+    } else {
+      clearTimeout(animator);
+    }
+  }
