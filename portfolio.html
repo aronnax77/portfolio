@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
   <link rel="stylesheet" href="css/portfolio.css">
   <script src="js/portfolio.js"></script>
   <meta charset="UTF-8">
@@ -13,14 +14,14 @@
     <nav>
       <div class="links">
         <ul>
-          <li><a href="#" onclick="return false;" onmousedown="autoScrollChoice('about');">About</a></li>
-          <li><a href="#" onclick="return false;" onmousedown="autoScrollChoice('portfolio');">Portfolio</a></li>
-          <li><a href="#" onclick="return false;" onmousedown="autoScrollChoice('contact');">Contact</a></li>
+          <li><a href="#" onclick="autoScrollChoice('about'); return false;">About</a></li>
+          <li><a href="#" onclick="autoScrollChoice('portfolio'); return false;">Portfolio</a></li>
+          <li><a href="#" onclick="autoScrollChoice('contact'); return false;">Contact</a></li>
         </ul>
     </div>
 
       <div class="name">
-      <p>Richard Myatt</p>
+      <p><a href="#" onclick="autoScrollChoice('contact'); return false;">Richard Myatt</a></p>
       </div>
 
     </nav>
@@ -31,12 +32,15 @@
           <h2 >About</h2>
           <img src="images/the_thinker.jpg"
           alt="The Thinker" height=200px>
-          <p>Largely self taught, I am an aspiring student of software
-            engineering with an active interest in web technology ambitions to
-            become a front and back end web developer.  My interests studies
-            nclude HTML, CSS, JavaScript, Python, SmallTalk, and MongoDB.</p>
-          <p>As well as general web disign I have a keen interest in using
-            browser technology for application development.</p>
+          <p>My name is Richard Myatt, I am a largely self taught student of software
+            engineering and design, with an active interest in web technology.
+            My interests include HTML, CSS, JavaScript, Python, SmallTalk, and MongoDB.
+          </p>
+          <p>As well as general web disign the use of browser technology for
+            application design and development is of particular interest.</p>
+          <p>Below I provide a sample portfolio of web pages which have formed exercises
+            and examples to date.  If you are interested in contacting me please
+            use the Contact form at the end of this page.</p>
         </section> <!-- about section ends -->
 
         <section id="portfolio"> <!-- beginning of portfolio section -->
@@ -47,13 +51,14 @@
 
             <div class="panel">
               <div class="card">
-                <img src="images/tinyblog.png" alt="tinyblog.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/tinyblog.png"
+                 alt="tinyblog.png">
               </div>
             </div>
 
             <div class="panel">
               <div class="card">
-                <img src="images/contact_book.png" alt="contact_book.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/contact_book.png" alt="contact_book.png">
               </div>
             </div>
 
@@ -63,13 +68,15 @@
 
             <div class="panel">
               <div class="card">
-                <img src="images/challenge.png" alt="challenge.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/challenge.png"
+                 alt="challenge.png">
               </div>
             </div>
 
             <div class="panel">
               <div class="card">
-                <img src="images/base64.png" alt="base64.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/base64.png"
+                 alt="base64.png">
               </div>
             </div>
 
@@ -79,13 +86,15 @@
 
             <div class="panel">
               <div class="card">
-                <img src="images/css_shapes.png" alt="css_shapes.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/css_shapes.png"
+                 alt="css_shapes.png">
               </div>
             </div>
 
             <div class="panel">
               <div class="card">
-                <img src="images/keyframes.png" alt="keyframes.png">
+                <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/keyframes.png"
+                 alt="keyframes.png">
               </div>
             </div>
 
@@ -95,13 +104,15 @@
 
           <div class="panel">
             <div class="card">
-              <img src="images/paint.png" alt="paint.png">
+              <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/paint.png"
+               alt="paint.png">
             </div>
           </div>
 
           <div class="panel">
             <div class="card">
-              <img src="images/tribute.png" alt="tribute.png">
+              <img src="https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/tribute.png"
+               alt="tribute.png">
             </div>
           </div>
 
@@ -129,7 +140,7 @@
 
       <div class="footnote">
       <p>Author: Richard Myatt</p>
-      <p>Date: 8 October 2017</p>
+      <p>Date: 15 October 2017</p>
     </div>
     </footer>
 

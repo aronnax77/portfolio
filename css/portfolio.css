@@ -9,17 +9,31 @@ Rules followed by SWITCH shourl be commented out or deleted in the final design
 for any site.
 
 
-GENERAL STYLING                - html elements and shared styles
+GENERAL               - html elements and shared styles
+MENU                  - nav, menu, and name styling
+ABOUT AND CONTACT     - general styling for the about and contact sections
+PORTFOLIO             - styling specific to the portfolio section
+CONTACT               - styling specific to the contact section
+FOOTER                - styling for the footer
 
 
 COLOUR PALETTE
 
-orange                - header background - delete or modify as necessary
-lightyellow           - body background   - delete or modify as necessary
-red                   - header border to aid design - delete or modify as necessary
-blue                  - article border to aid design - delete or modify as necessary
-green                 - section border to aid design - delete or modify as necessary
-rgb(230, 230, 230, 1) - article background - delete or modify as necessary
+white                 - main container seen in portfolio section, text in nav
+                        and footer
+yellow                - menu hover
+lightgrey             - about and contact sections
+lightblue             - about image
+black                 - portfolio image borders
+darkblue              - nav bar, unordered list, and footer
+silver                - body
+#bbb                  - grey border to menu items
+#3fb6b2               - light green submit button
+#ffffff               - white submit text
+#43a09d               - darker green submit hover
+#cecece               - grey input and text area border
+#efefef               - grey input and text area background
+#787575               - grey input and text area text
 
 Note: https://autoprefixer.github.io was used to add the prefixed additions in
       the code below.
@@ -28,7 +42,7 @@ Note: https://autoprefixer.github.io was used to add the prefixed additions in
 
 
 /******************************************************************************
-  General styling begins
+  General styling begins - GENERAL
 ******************************************************************************/
 * {
   -webkit-box-sizing: border-box;
@@ -47,52 +61,43 @@ nav {
   top: 0;
   left: 10vw;
   right: 10vw;
-  border: 4px solid yellow;
   background-color: darkblue;
-  /*padding: 16px 0;*/
+  /*border: 4px solid yellow; /*SWITCH*/
 }
 
 body {
   background-color: silver;
 }
 
-/*header {
-  position: static;
-  text-align: center;
-  font-size: 1.5vw;
-  height: 150px;
-  padding: 20px 0;
-  border: 4px solid red; /* SWITCH */
-/*}*/
-
 article {
   min-height: 100vh;
   margin: 0 auto;
   padding-top: 0px;
-  border: 4px solid blue; /* SWITCH */
+  /*border: 4px solid blue; /* SWITCH */
 }
 
 section {
-  /*margin: 2%;*/
   padding: 16px 16px 50px 16px;
   /*Height: 300px; /* SWITCH */
-  border: 4px solid green; /* SWITCH */
+  /*border: 4px solid green; /* SWITCH */
 }
 
 hr {
   width: 95%;
 }
 
-
-
 h1 {
   transform: translate(0, -25%);
+}
+
+h2 {
+  font-family: 'Amaranth';
 }
 /* General styling ends */
 
 
 /******************************************************************************
-  Menu styling begins
+  Menu styling begins - MENU
 ******************************************************************************/
 ul {
   display: inline-block;
@@ -105,17 +110,18 @@ ul {
 
 li {
   text-align: center;
+  font-family: 'Amaranth';
   float: left;
   padding: 20px 16px;
   border-right: 1px solid #bbb;
 }
 
-li a {
+.name a, li a {
   color: white;
   text-decoration: none;
 }
 
-li a:hover {
+.name a:hover, li a:hover {
   color: yellow;
 }
 
@@ -126,53 +132,17 @@ li a:hover {
 .name {
   display:inline-block;
   float: right;
+  font-family: 'Amaranth';
   font-size: 1.2em;
   padding-top: 0px;
   padding-right: 20px;
   text-align: right;
-  color: white;
-  /*float: right;*/
 }
 /* Menu styling ends */
 
 
-form {
-    text-align: center;
-    margin-top: 0;
-    padding: 20px;
-}
-.submit {
-    background-color: #3fb6b2;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
-}
-.submit:hover {
-    background-color: #43a09d;
-}
-textarea {
-    height: 100px;
-}
-input, textarea {
-    margin-bottom: 10px;
-    font-size: 11pt;
-    padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
-    color: #787575;
-    border-radius: 5px;
-    width: 70%;
-    outline: none;
-}
-
-
 /******************************************************************************
-  About and Contact sections begin
+  About and Contact sections begin - ABOUT AND CONTACT
 ******************************************************************************/
 #about, #contact {
   padding-top: 50px;
@@ -187,6 +157,7 @@ input, textarea {
 }
 
 #about p {
+  font-family: 'Amaranth';
   font-size: 1.3vw;
   text-align: justify;
   color: white;
@@ -202,7 +173,7 @@ input, textarea {
 
 
 /******************************************************************************
-  Portfolio begins
+  Portfolio begins - PORTFOLIO
 ******************************************************************************/
 #portfolio {
   padding-top: 50px;
@@ -216,14 +187,14 @@ input, textarea {
 .row {
   height: 20vw;
   margin-top: 30px;
-  border: 2px solid red;
+  /*border: 2px solid red; /*SWITCH*/
 }
 
 .panel {
   float: left;
   width: 50%;
   height: 100%;
-  border: 2px solid green;
+  /*border: 2px solid green; /*SWITCH*/
 }
 
 .card {
@@ -231,7 +202,7 @@ input, textarea {
   width: 25vw;
   height: 100%;
   margin: 0 auto;
-  border: 2px solid blue;
+  /*border: 2px solid blue; /*SWITCH*/
 }
 
 .card img {
@@ -242,7 +213,50 @@ input, textarea {
 
 
 /******************************************************************************
-  Footer begins
+  Contact styling begins - CONTACT
+******************************************************************************/
+form {
+
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #43a09d;
+}
+textarea {
+    font-family: 'Amaranth';
+    height: 100px;
+}
+input, textarea {
+    margin-bottom: 30px;
+    font-family: 'Amaranth';
+    font-size: 11pt;
+    padding: 15px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+/* Contact styling ends */
+
+
+/******************************************************************************
+  Footer begins - FOOTER
 ******************************************************************************/
 footer {
   position: relative;
@@ -250,7 +264,7 @@ footer {
   margin: 0 auto;
   height: 100px;
   background-color: darkblue;
-  border: 4px solid yellow; /* SWITCH */
+  /*border: 4px solid yellow; /* SWITCH */
 }
 
 .icons {
@@ -273,3 +287,4 @@ footer i {
   top: 5px;
   font-size: 10px;
 }
+/* footer ends */
