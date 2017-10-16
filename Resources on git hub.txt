@@ -4,6 +4,11 @@ link location
 development
 production
 
+the_thinker.jpg
+https://github.com/aronnax77/portfolio/blob/master/images/the_thinker.jpg
+https://cdn.rawgit.com/aronnax77/portfolio/b1a9fdbb/images/the_thinker.jpg
+https://rawgit.com/aronnax77/portfolio/master/images/the_thinker.jpg
+
 base64.png
 https://github.com/aronnax77/portfolio/blob/master/images/base64.png
 https://cdn.rawgit.com/aronnax77/portfolio/d61abf4f/images/base64.png
